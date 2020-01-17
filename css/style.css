@@ -1,0 +1,34 @@
+@media screen and (min-width: 300px) {
+    body {
+        background-color: black;
+    }
+
+    #app {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10rem;
+        color: white;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    .title {
+        margin-bottom: 3rem;
+    }
+
+    .block {
+        background-color: #ffffff;
+        width: 200px;
+        height: 150px;
+        color: black;
+        font-family: 'Bangers', cursive;
+    }
+
+    .replayDiv {
+        margin-top: 3rem;
+    }
+
+    .replayDiv-replay:hover {
+        text-decoration: underline;
+    }
+}
