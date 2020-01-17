@@ -1,17 +1,22 @@
+import predictions from '../data/predictions.js';
+
 const app = {
     init: () => {
         app.container = document.getElementById('app');
+        app.container.innerHTML = '';
+
         app.title();
         app.blackContainer();
+        app.displayPrediction();
         app.replay();
     },
 
     title: () => {
-        app.title = document.createElement('h1');
-        app.title.classList.add('title');
-        app.title.textContent = 'En 2020, je...';
+        app.gameTitle = document.createElement('h1');
+        app.gameTitle.classList.add('title');
+        app.gameTitle.textContent = 'En 2020, je...';
 
-        app.container.appendChild(app.title);
+        app.container.appendChild(app.gameTitle);
     },
 
     blackContainer: () => {
@@ -21,19 +26,40 @@ const app = {
         app.container.appendChild(app.block);
     },
 
+    prediction: (text) => {
+        app.onePrediction = document.createElement('div');
+        app.onePrediction.classList.add('block-prediction');
+        app.onePrediction.textContent = text;
+        
+        app.block.appendChild(app.onePrediction);
+
+    },
+
+    displayPrediction: () => {
+        app.shuffledPredictions = predictions
+        .map((a) => ({
+            sort: Math.random(),
+            value: a
+        }))
+        .sort((a, b) => a.sort - b.sort)
+        .map((a) => a.value)
+
+        console.log(app.shuffledPredictions);
+    },
+
     replay: () => {
         app.replayDiv = document.createElement('div');
         app.replayDiv.classList.add('replayDiv');
-        
-        app.replay = document.createElement('a');
-        app.replay.textContent = 'Rejouer';
-        app.replay.href = '#';
-        app.replay.addEventListener('click', () => {
-            window.location.reload(true);
+
+        app.replayLink = document.createElement('a');
+        app.replayLink.textContent = 'Rejouer';
+        app.replayLink.href = '#';
+        app.replayLink.addEventListener('click', () => {
+            app.init();
         });
-        app.replay.classList.add('replayDiv-replay');
+        app.replayLink.classList.add('replayDiv-replay');
         
-        app.replayDiv.appendChild(app.replay);
+        app.replayDiv.appendChild(app.replayLink);
         app.container.appendChild(app.replayDiv);
     }
 }
