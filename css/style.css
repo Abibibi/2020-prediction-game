@@ -17,11 +17,18 @@
     }
 
     .block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: #ffffff;
         width: 200px;
         height: 150px;
         color: black;
         font-family: 'Bangers', cursive;
+    }
+
+    .block-prediction-hide {
+        display: none;
     }
 
     .replayDiv {

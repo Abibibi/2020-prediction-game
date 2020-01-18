@@ -21,7 +21,7 @@ export default [
     },
     {
         id: 6,
-        texte: 'FERAI UN HACKATHON'
+        texte: 'PARTICIPERAI À UN HACKATHON'
     },
     {
         id: 7,

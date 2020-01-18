@@ -7,8 +7,11 @@ const app = {
 
         app.title();
         app.blackContainer();
-        app.displayPrediction();
+        app.prediction();
         app.replay();
+        app.instant = setInterval(app.changePrediction, 150);
+        app.instant();
+   
     },
 
     title: () => {
@@ -26,25 +29,32 @@ const app = {
         app.container.appendChild(app.block);
     },
 
-    prediction: (text) => {
+    prediction: () => {
         app.onePrediction = document.createElement('div');
         app.onePrediction.classList.add('block-prediction');
-        app.onePrediction.textContent = text;
         
         app.block.appendChild(app.onePrediction);
-
     },
 
-    displayPrediction: () => {
+    counter: 0,
+
+    changePrediction: () => {
         app.shuffledPredictions = predictions
         .map((a) => ({
             sort: Math.random(),
             value: a
         }))
         .sort((a, b) => a.sort - b.sort)
-        .map((a) => a.value)
-
-        console.log(app.shuffledPredictions);
+        .map((a) => a.value.texte);
+        
+        app.onePrediction.textContent = app.shuffledPredictions[app.counter];
+        
+        app.counter++;
+        
+        if(app.counter >= app.shuffledPredictions.length) {
+            app.counter = 0;
+            clearInterval(app.instant);
+        } 
     },
 
     replay: () => {
