@@ -9,9 +9,7 @@ const app = {
         app.blackContainer();
         app.prediction();
         app.replay();
-        app.instant = setInterval(app.changePrediction, 150);
-        app.instant();
-   
+        app.instant = setInterval(app.changePrediction, 75);
     },
 
     title: () => {

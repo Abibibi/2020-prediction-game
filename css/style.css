@@ -1,6 +1,6 @@
 @media screen and (min-width: 300px) {
     body {
-        background-color: black;
+        background-color: #252525;
     }
 
     #app {
@@ -13,6 +13,7 @@
     }
 
     .title {
+        font-size: 1.6em;
         margin-bottom: 3rem;
     }
 
@@ -20,15 +21,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #ffffff;
+        text-align: center;
+        background-color: #171616;
         width: 200px;
         height: 150px;
-        color: black;
-        font-family: 'Bangers', cursive;
-    }
-
-    .block-prediction-hide {
-        display: none;
+        color: #ffffff;
+        font-family: 'Josefin Sans', sans-serif;
+        border-radius: 2rem;
     }
 
     .replayDiv {
@@ -37,5 +36,17 @@
 
     .replayDiv-replay:hover {
         text-decoration: underline;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .title {
+        font-size: 2em;
+        margin-bottom: 3rem;
+    }
+ 
+    .block {
+        width: 280px;
+        height: 220px;
     }
 }

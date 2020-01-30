@@ -1,11 +1,11 @@
 export default [
     {
         id: 1,
-        texte: 'SERAI GÉNÉREUX-SE'
+        texte: 'SOUTIENDRAI DES CAMPAGNES DE CROWDFUNDING'
     },
     {
         id: 2,
-        texte: 'FERAI DU KICK-BOXING'
+        texte: 'FERAI DE LA MUSCU'
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ export default [
     },
     {
         id: 6,
-        texte: 'PARTICIPERAI À UN HACKATHON'
+        texte: 'GAGNERAI LA BATTLEDEV'
     },
     {
         id: 7,
