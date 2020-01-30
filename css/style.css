@@ -1,20 +1,25 @@
 @media screen and (min-width: 300px) {
     body {
         background-color: #252525;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     #app {
+        margin-top: 1.4rem;
+        width: 13rem;
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 10rem;
         color: white;
         font-family: 'Quicksand', sans-serif;
     }
 
     .title {
-        font-size: 1.6em;
-        margin-bottom: 3rem;
+        font-size: 1.5em;
+        margin-bottom: 1.1rem;
     }
 
     .block {
@@ -24,14 +29,29 @@
         text-align: center;
         background-color: #171616;
         width: 200px;
-        height: 150px;
+        height: 104px;
+        padding: 0 .3rem;
         color: #ffffff;
         font-family: 'Josefin Sans', sans-serif;
         border-radius: 2rem;
     }
 
+    .block-prediction {
+        font-size: .75em
+    }
+
+    .picture {
+        position: absolute;
+        top: 8.9rem;
+        width: 9.4rem;
+        left: 2rem;
+    }
+
     .replayDiv {
         margin-top: 3rem;
+        position: absolute;
+        top: 29.9rem;
+        left: 5rem;
     }
 
     .replayDiv-replay:hover {
@@ -39,7 +59,7 @@
     }
 }
 
-@media screen and (min-width: 400px) {
+/* @media screen and (min-width: 400px) {
     .title {
         font-size: 2em;
         margin-bottom: 3rem;
@@ -49,4 +69,4 @@
         width: 280px;
         height: 220px;
     }
-}
+} */
