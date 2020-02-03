@@ -10,7 +10,7 @@ const app = {
         app.prediction();
         app.picture();
         app.replay();
-        app.instant = setInterval(app.changePrediction, 75);
+        app.instant = setInterval(app.changePrediction, 60);
     },
 
     title: () => {
