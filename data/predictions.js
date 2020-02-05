@@ -37,7 +37,7 @@ export default [
     },
     {
         id: 10,
-        texte: 'GOÛTERAI LA CUISINE TIBÉTAINE'
+        texte: 'TESTERAI LA CUISINE TIBÉTAINE'
     },
     {
         id: 11,
@@ -61,14 +61,10 @@ export default [
     },
     {
         id: 16,
-        texte: 'M\'OFFRIRAI (AU MOINS !) UN MASSAGE'
-    },
-    {
-        id: 17,
         texte: 'M\'OFFRIRAI ENFIN UN CABLE USB DE 2M DE LONG'
     },
     {
-        id: 18,
+        id: 17,
         texte: 'RÉÉCOUTERAI TOUT LOUIS ARMSTRONG'
     },
 ]

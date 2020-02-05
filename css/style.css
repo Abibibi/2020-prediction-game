@@ -1,6 +1,6 @@
 @media screen and (min-width: 300px) {
     body {
-        background-color: #252525;
+        background-color: #464444;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -34,6 +34,7 @@
         color: #ffffff;
         font-family: 'Josefin Sans', sans-serif;
         border-radius: 2rem;
+        z-index: 1
     }
 
     .block-prediction {
@@ -45,6 +46,7 @@
         top: 8.9rem;
         width: 9.4rem;
         left: 2rem;
+        z-index: 0
     }
 
     .replayDiv {
@@ -59,14 +61,28 @@
     }
 }
 
-/* @media screen and (min-width: 400px) {
+@media screen and (min-height: 600px) {
+    #app {
+        margin-top: 2rem;
+    }
+    
     .title {
-        font-size: 2em;
-        margin-bottom: 3rem;
+        margin-bottom: 1.7rem;
     }
- 
+
     .block {
-        width: 280px;
-        height: 220px;
+        padding: 0 1rem;
+        line-height: 1.1rem;
     }
-} */
+
+    .picture {
+        top: 9.5rem;
+        width: 11rem;
+        left: 1.4rem;
+    }
+
+    .replayDiv {
+        top: 35rem;
+        left: 5.2rem;
+    }
+}

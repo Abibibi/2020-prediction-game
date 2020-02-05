@@ -58,7 +58,7 @@ const app = {
 
     picture: () => {
         app.pictureElement = document.createElement('img');
-        app.pictureElement.src = "https://www.cjoint.com/doc/20_01/JAEcSgqDpPA_abi-detouree-mon-annee-2020-copie.png";
+        app.pictureElement.src = "../assets/images/abi.svg";
         app.pictureElement.alt = "Femme levant les bras en l'air, donnant l'impression de tenir le bloc où défilent les prédictions pour 2020."
         app.pictureElement.classList.add('picture');
 
