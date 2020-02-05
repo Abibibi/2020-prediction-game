@@ -19,7 +19,7 @@
 
     .title {
         font-size: 1.5em;
-        margin-bottom: 1.1rem;
+        margin: 6rem 0 1.7rem;
     }
 
     .block {
@@ -28,32 +28,32 @@
         align-items: center;
         text-align: center;
         background-color: #171616;
-        width: 200px;
-        height: 104px;
-        padding: 0 .3rem;
+        width: 240px;
+        height: 139px;
+        padding: 0 1.3rem;
         color: #ffffff;
         font-family: 'Josefin Sans', sans-serif;
         border-radius: 2rem;
-        z-index: 1
+        margin-top: 1rem;
     }
 
     .block-prediction {
-        font-size: .75em
+        font-size: 1.05em;
+        line-height: 1.5em;
     }
 
     .picture {
         position: absolute;
-        top: 8.9rem;
-        width: 9.4rem;
-        left: 2rem;
-        z-index: 0
+        top: 18.68rem;
+        width: 11rem;
+        left: 1.4rem;
     }
 
     .replayDiv {
         margin-top: 3rem;
         position: absolute;
-        top: 29.9rem;
-        left: 5rem;
+        top: 34rem;
+        left: 5.2rem;
     }
 
     .replayDiv-replay:hover {
@@ -61,18 +61,14 @@
     }
 }
 
-@media screen and (min-height: 600px) {
+/* @media screen and (min-height: 600px) {
     #app {
         margin-top: 2rem;
     }
     
-    .title {
-        margin-bottom: 1.7rem;
-    }
 
     .block {
         padding: 0 1rem;
-        line-height: 1.1rem;
     }
 
     .picture {
@@ -85,4 +81,4 @@
         top: 35rem;
         left: 5.2rem;
     }
-}
+} */
