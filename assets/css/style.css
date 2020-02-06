@@ -1,6 +1,6 @@
 @media screen and (min-width: 300px) {
     body {
-        background-color: #464444;
+        background-color: #d08579;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -18,8 +18,9 @@
     }
 
     .title {
-        font-size: 1.5em;
-        margin: 6rem 0 1.7rem;
+        font-family: 'Pacifico', cursive;
+        font-size: 2.1em;
+        margin: 2.5rem 0 1.7rem;
     }
 
     .block {
@@ -27,7 +28,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        background-color: #171616;
+        background-color: #1f1e1e;
         width: 240px;
         height: 139px;
         padding: 0 1.3rem;
@@ -44,7 +45,7 @@
 
     .picture {
         position: absolute;
-        top: 18.68rem;
+        top: 15.58rem;
         width: 11rem;
         left: 1.4rem;
     }
@@ -52,8 +53,9 @@
     .replayDiv {
         margin-top: 3rem;
         position: absolute;
-        top: 34rem;
+        top: 32.7rem;
         left: 5.2rem;
+        font-weight: 600;
     }
 
     .replayDiv-replay:hover {

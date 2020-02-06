@@ -58,7 +58,7 @@ const app = {
 
     picture: () => {
         app.pictureElement = document.createElement('img');
-        app.pictureElement.src = "../assets/images/abi_detouree_rognee_light.svg";
+        app.pictureElement.src = "../assets/images/abi.svg";
         app.pictureElement.alt = "Femme levant les bras en l'air, donnant l'impression de tenir le bloc où défilent les prédictions pour 2020."
         app.pictureElement.classList.add('picture');
 
