@@ -9,6 +9,7 @@
     #app {
         margin-top: 1.4rem;
         width: 13rem;
+        height: 100%;
         position: relative;
         display: flex;
         flex-direction: column;
