@@ -1,5 +1,8 @@
 import predictions from './data/predictions.js';
-import picture from '../dist/assets/images/abi.svg';
+import picture from './assets/images/abi.svg';
+
+import './styles/css/reset.css';
+import './styles/css/style.css';
 
 const app = {
     init: () => {

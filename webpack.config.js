@@ -1,3 +1,5 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
     // 1
     entry: './src/index.js',
@@ -30,10 +32,20 @@ module.exports = {
                 test: /\.(js)$/,
                 exclude: /node_modules/,
                 use: ['babel-loader']
-            }
+            },
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
+            },
         ]
     },
     resolve: {
         extensions: ['*', '.js']
-    }
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            title: 'Prédictions - mon année 2020',
+            template: './src/index.html'
+        })
+    ]
 };
