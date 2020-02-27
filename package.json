@@ -1,0 +1,23 @@
+{
+  "name": "2020-prediction-game",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Abibibi/2020-prediction-game.git",
+  "author": "Abibibi <abeba.ngwe@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "babel-loader": "^8.0.6",
+    "svg-url-loader": "^4.0.0",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "build": "webpack --config ./webpack.config.js --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": []
+}
