@@ -1,5 +1,5 @@
 import predictions from './data/predictions.js';
-import picture from './assets/images/abi.svg';
+import picture from './styles/images/abi.svg';
 
 import './styles/css/reset.css';
 import './styles/css/style.css';
