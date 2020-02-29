@@ -6,6 +6,17 @@ import './styles/css/style.css';
 
 const app = {
     init: () => {
+        setTimeout(() => {
+            // to make sure height taken into account
+            // is always window height, even if 
+            // this height is reduced (typically,
+            // when the keyboard is displayed on mobile)
+            const viewheight = window.innerHeight;
+            const viewwidth = window.innerWidth;
+            const viewport = document.querySelector('meta[name=viewport]');
+            viewport.setAttribute('content', `height=${viewheight}px, width=${viewwidth}px, initial-scale=1.0`);
+        }, 300);
+
         app.container = document.getElementById('app');
         app.container.innerHTML = '';
 
