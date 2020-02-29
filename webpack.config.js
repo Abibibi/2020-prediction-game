@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     // 1
@@ -43,6 +44,7 @@ module.exports = {
         extensions: ['*', '.js']
     },
     plugins: [
+        new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             title: 'Prédictions - mon année 2020',
             template: './src/index.html'
