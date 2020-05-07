@@ -32,7 +32,7 @@ module.exports = {
             {
                 test: /\.(js)$/,
                 exclude: /node_modules/,
-                loader: 'babel-loader?optional=runtime&cacheDirectory'
+                use: ['babel-loader?optional=runtime&cacheDirectory']
             },
             {
                 test: /\.css$/,
