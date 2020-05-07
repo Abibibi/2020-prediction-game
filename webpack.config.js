@@ -22,9 +22,9 @@ module.exports = {
                 exclude: /fonts/, /* dont want svg fonts from fonts folder to be included */
                 use: [
                     {
-                    loader: 'svg-url-loader',
-                    options: {
-                        noquotes: true,
+                        loader: 'svg-url-loader',
+                        options: {
+                            noquotes: true,
                     },
                     },
                 ],
@@ -32,7 +32,14 @@ module.exports = {
             {
                 test: /\.(js)$/,
                 exclude: /node_modules/,
-                use: ['babel-loader?optional=runtime&cacheDirectory']
+                use: [
+                    {
+                        loader: 'babel-loader',
+                        options: {
+                            cacheDirectory: true,
+                        },
+                    }
+                ]
             },
             {
                 test: /\.css$/,
